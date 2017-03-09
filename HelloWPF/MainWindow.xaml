@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Grid.ColumnSpan="2">
             <StackPanel>
-                <Image Source="C:\Users\Attila\Documents\Visual Studio 2015\Projects\HelloWPF\HelloWPF\res\RobonAUT_2017_beharangozo_kep.png" Height="480" Width="640"/>
+                <Image Source="https://github.com/kissatt/LoginWPF/blob/master/HelloWPF/res/RobonAUT_2017_beharangozo_kep.png?raw=true" Height="480" Width="640"/>
             </StackPanel>
         </Label>
         <Grid Grid.Row="1">
