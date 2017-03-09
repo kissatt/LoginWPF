@@ -1,0 +1,40 @@
+﻿<Window x:Class="HelloWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:HelloWPF"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="540" Width="640" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.ColumnSpan="2">
+            <StackPanel>
+                <Image Source="C:\Users\Attila\Documents\Visual Studio 2015\Projects\HelloWPF\HelloWPF\res\RobonAUT_2017_beharangozo_kep.png" Height="480" Width="640"/>
+            </StackPanel>
+        </Label>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="_Name:" Target="{Binding ElementName=txtName}" />
+            <TextBox Grid.Row="0" Grid.Column="1" Name="txtName" Margin="1"/>
+            <Label Grid.Row="1" Content="_Password:" Target="{Binding ElementName=txtPass}" />
+            <PasswordBox Grid.Row="1" Grid.Column="1" Name="txtPass" Margin="1"/>
+        </Grid>
+        <Button Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="60"  Margin="10">Ok</Button>
+    </Grid>
+</Window>
