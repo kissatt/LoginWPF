@@ -83,6 +83,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helper\DelegateCommand.cs" />
     <Compile Include="Model\Team.cs" />
     <Compile Include="ViewModel\TeamViewModel.cs" />
     <Compile Include="View\TeamWindow.xaml.cs">
