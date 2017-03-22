@@ -22,19 +22,10 @@ namespace HelloWPF.View
     /// </summary>
     public partial class TeamWindow : Window
     {
-        //private ObservableCollection<Team> teams = new ObservableCollection<Team>();
-
         public TeamWindow()
         {
             InitializeComponent();
             DataContext = new TeamViewModel();
-
-            //lbTeams.ItemsSource = teams;
         }
-
-        /*private void btnAdd_Click(object sender, RoutedEventArgs e)
-        {
-            teams.Add(new Team() { Name = txtIn.Text });
-        }*/
     }
 }
