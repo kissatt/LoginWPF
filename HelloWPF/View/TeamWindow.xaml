@@ -1,0 +1,33 @@
+﻿<Window x:Class="HelloWPF.View.TeamWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWPF.View"
+        mc:Ignorable="d"
+        Title="RobonAUT" Height="500" Width="500">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Csapatok">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="5*" />
+                    </Grid.RowDefinitions>
+                    <TextBox Name="txtIn"  Height="30" HorizontalAlignment="Stretch" Margin="5" Text="{Binding TeamName, Mode=TwoWay}"/>
+                    <Button Name="btnAdd" Grid.Column="1" Grid.Row="0" Height="30" Command="{Binding AddTeam}">Felvétel</Button>
+                    <ListBox Name="lbTeams" Grid.Column="0" Grid.Row="1" Margin="5" DisplayMemberPath="Name" ItemsSource="{Binding Teams}"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Pontok">
+                
+            </TabItem>
+        </TabControl>
+    </Grid>
+    
+   
+</Window>
